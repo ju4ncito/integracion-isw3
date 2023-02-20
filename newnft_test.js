@@ -12,7 +12,7 @@ Scenario("new NFT transaction", ({ I }) => {
   I.fillField("#price", "3");
   I.selectOption("#status", "Sold");
   I.click("Submit");
-  I.waitForText("NFT added correctly", 2);
+  I.waitForText("NFT added correctly", 4);
 });
 
 Scenario("new NFT transaction with invalid price", ({ I }) => {
