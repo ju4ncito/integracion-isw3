@@ -1,4 +1,4 @@
-const { setHeadlessWhen, setCommonPlugins } = require('@codeceptjs/configure');
+const { setHeadlessWhen, setCommonPlugins } = require("@codeceptjs/configure");
 // turn on headless mode when running with HEADLESS=true environment variable
 // export HEADLESS=true && npx codeceptjs run
 setHeadlessWhen(process.env.HEADLESS);
@@ -8,17 +8,17 @@ setCommonPlugins();
 
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
-  tests: './*_test.js',
-  output: './output',
+  tests: "./*_test.js",
+  output: "./output",
   helpers: {
     Playwright: {
-      url: 'https://afraid-tiger-production.up.railway.app/',
+      url: "https://afraid-tiger-production.up.railway.app/",
       show: true,
-      browser: 'chromium'
-    }
+      browser: "chromium",
+    },
   },
   include: {
-    I: './steps_file.js'
+    I: "./steps_file.js",
   },
-  name: 'integracion-isw3'
-}
+  name: "integracion-isw3",
+};
