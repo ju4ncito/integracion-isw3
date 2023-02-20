@@ -13,7 +13,7 @@ exports.config = {
   helpers: {
     Playwright: {
       url: "https://afraid-tiger-production.up.railway.app/",
-      show: true,
+      show: false,
       browser: "chromium",
     },
   },
